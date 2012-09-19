@@ -10,4 +10,7 @@
 
 @implementation Member
 
+@synthesize email;
+@synthesize evolutions;
+
 @end

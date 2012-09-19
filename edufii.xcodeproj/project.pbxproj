@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF2AF1161607C8E8004D5145 /* Member.m in Sources */ = {isa = PBXBuildFile; fileRef = AF2AF1151607C8E8004D5145 /* Member.m */; };
+		AF2AF1191607CA6A004D5145 /* Evolution.m in Sources */ = {isa = PBXBuildFile; fileRef = AF2AF1181607CA6A004D5145 /* Evolution.m */; };
+		AF2AF11C1607CBBE004D5145 /* EvolutionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AF2AF11B1607CBBE004D5145 /* EvolutionCell.m */; };
+		AF2AF11F16080B69004D5145 /* Thread.m in Sources */ = {isa = PBXBuildFile; fileRef = AF2AF11E16080B69004D5145 /* Thread.m */; };
+		AF2AF12216081173004D5145 /* ThreadTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF2AF12116081173004D5145 /* ThreadTableViewController.m */; };
 		AFF1534E1606D9A900CA2685 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFF1534D1606D9A900CA2685 /* UIKit.framework */; };
 		AFF153501606D9A900CA2685 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFF1534F1606D9A900CA2685 /* Foundation.framework */; };
 		AFF153521606D9A900CA2685 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFF153511606D9A900CA2685 /* CoreGraphics.framework */; };
@@ -15,10 +20,72 @@
 		AFF1535E1606D9A900CA2685 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF1535D1606D9A900CA2685 /* AppDelegate.m */; };
 		AFF153611606D9A900CA2685 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFF1535F1606D9A900CA2685 /* MainStoryboard.storyboard */; };
 		AFF153641606D9A900CA2685 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF153631606D9A900CA2685 /* MasterViewController.m */; };
-		AFF153671606D9A900CA2685 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF153661606D9A900CA2685 /* DetailViewController.m */; };
+		AFF153851606E5BE00CA2685 /* libRestKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AFF153791606DDDF00CA2685 /* libRestKit.a */; };
+		AFF153871606E5D600CA2685 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFF153861606E5D600CA2685 /* CFNetwork.framework */; };
+		AFF153891606E5E300CA2685 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFF153881606E5E300CA2685 /* CoreData.framework */; };
+		AFF1538B1606E5EF00CA2685 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AFF1538A1606E5EF00CA2685 /* libxml2.dylib */; };
+		AFF1538D1606E5FB00CA2685 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFF1538C1606E5FB00CA2685 /* MobileCoreServices.framework */; };
+		AFF1538F1606E60700CA2685 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFF1538E1606E60700CA2685 /* QuartzCore.framework */; };
+		AFF153911606E61900CA2685 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFF153901606E61900CA2685 /* Security.framework */; };
+		AFF153931606E62E00CA2685 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFF153921606E62E00CA2685 /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		AFF153781606DDDF00CA2685 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFF1536D1606DDDF00CA2685 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160D1614564E810060A5C5;
+			remoteInfo = RestKit;
+		};
+		AFF1537A1606DDDF00CA2685 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFF1536D1606DDDF00CA2685 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160D2614564E820060A5C5;
+			remoteInfo = RestKitTests;
+		};
+		AFF1537C1606DDDF00CA2685 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFF1536D1606DDDF00CA2685 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160E62145651060060A5C5;
+			remoteInfo = RestKitFramework;
+		};
+		AFF1537E1606DDDF00CA2685 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFF1536D1606DDDF00CA2685 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160E78145651060060A5C5;
+			remoteInfo = RestKitFrameworkTests;
+		};
+		AFF153801606DDDF00CA2685 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFF1536D1606DDDF00CA2685 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 259C301615128079003066A2;
+			remoteInfo = RestKitResources;
+		};
+		AFF153831606E5AB00CA2685 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFF1536D1606DDDF00CA2685 /* RestKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 25160D1514564E810060A5C5;
+			remoteInfo = RestKit;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		AF2AF1141607C8E8004D5145 /* Member.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Member.h; sourceTree = "<group>"; };
+		AF2AF1151607C8E8004D5145 /* Member.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Member.m; sourceTree = "<group>"; };
+		AF2AF1171607CA6A004D5145 /* Evolution.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Evolution.h; sourceTree = "<group>"; };
+		AF2AF1181607CA6A004D5145 /* Evolution.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Evolution.m; sourceTree = "<group>"; };
+		AF2AF11A1607CBBE004D5145 /* EvolutionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EvolutionCell.h; sourceTree = "<group>"; };
+		AF2AF11B1607CBBE004D5145 /* EvolutionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EvolutionCell.m; sourceTree = "<group>"; };
+		AF2AF11D16080B69004D5145 /* Thread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Thread.h; sourceTree = "<group>"; };
+		AF2AF11E16080B69004D5145 /* Thread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Thread.m; sourceTree = "<group>"; };
+		AF2AF12016081173004D5145 /* ThreadTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreadTableViewController.h; sourceTree = "<group>"; };
+		AF2AF12116081173004D5145 /* ThreadTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreadTableViewController.m; sourceTree = "<group>"; };
 		AFF153491606D9A900CA2685 /* edufii.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = edufii.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFF1534D1606D9A900CA2685 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		AFF1534F1606D9A900CA2685 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -32,8 +99,14 @@
 		AFF153601606D9A900CA2685 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		AFF153621606D9A900CA2685 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
 		AFF153631606D9A900CA2685 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		AFF153651606D9A900CA2685 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		AFF153661606D9A900CA2685 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		AFF1536D1606DDDF00CA2685 /* RestKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RestKit.xcodeproj; path = RestKit/RestKit.xcodeproj; sourceTree = "<group>"; };
+		AFF153861606E5D600CA2685 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		AFF153881606E5E300CA2685 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		AFF1538A1606E5EF00CA2685 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		AFF1538C1606E5FB00CA2685 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		AFF1538E1606E60700CA2685 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		AFF153901606E61900CA2685 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		AFF153921606E62E00CA2685 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +114,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFF153931606E62E00CA2685 /* SystemConfiguration.framework in Frameworks */,
+				AFF153911606E61900CA2685 /* Security.framework in Frameworks */,
+				AFF1538F1606E60700CA2685 /* QuartzCore.framework in Frameworks */,
+				AFF1538D1606E5FB00CA2685 /* MobileCoreServices.framework in Frameworks */,
+				AFF1538B1606E5EF00CA2685 /* libxml2.dylib in Frameworks */,
+				AFF153891606E5E300CA2685 /* CoreData.framework in Frameworks */,
+				AFF153871606E5D600CA2685 /* CFNetwork.framework in Frameworks */,
+				AFF153851606E5BE00CA2685 /* libRestKit.a in Frameworks */,
 				AFF1534E1606D9A900CA2685 /* UIKit.framework in Frameworks */,
 				AFF153501606D9A900CA2685 /* Foundation.framework in Frameworks */,
 				AFF153521606D9A900CA2685 /* CoreGraphics.framework in Frameworks */,
@@ -53,6 +134,14 @@
 		AFF1533E1606D9A900CA2685 = {
 			isa = PBXGroup;
 			children = (
+				AFF153921606E62E00CA2685 /* SystemConfiguration.framework */,
+				AFF153901606E61900CA2685 /* Security.framework */,
+				AFF1538E1606E60700CA2685 /* QuartzCore.framework */,
+				AFF1538C1606E5FB00CA2685 /* MobileCoreServices.framework */,
+				AFF1538A1606E5EF00CA2685 /* libxml2.dylib */,
+				AFF153881606E5E300CA2685 /* CoreData.framework */,
+				AFF153861606E5D600CA2685 /* CFNetwork.framework */,
+				AFF1536D1606DDDF00CA2685 /* RestKit.xcodeproj */,
 				AFF153531606D9A900CA2685 /* edufii */,
 				AFF1534C1606D9A900CA2685 /* Frameworks */,
 				AFF1534A1606D9A900CA2685 /* Products */,
@@ -83,11 +172,19 @@
 				AFF1535C1606D9A900CA2685 /* AppDelegate.h */,
 				AFF1535D1606D9A900CA2685 /* AppDelegate.m */,
 				AFF1535F1606D9A900CA2685 /* MainStoryboard.storyboard */,
+				AF2AF12016081173004D5145 /* ThreadTableViewController.h */,
+				AF2AF12116081173004D5145 /* ThreadTableViewController.m */,
 				AFF153621606D9A900CA2685 /* MasterViewController.h */,
 				AFF153631606D9A900CA2685 /* MasterViewController.m */,
-				AFF153651606D9A900CA2685 /* DetailViewController.h */,
-				AFF153661606D9A900CA2685 /* DetailViewController.m */,
 				AFF153541606D9A900CA2685 /* Supporting Files */,
+				AF2AF1141607C8E8004D5145 /* Member.h */,
+				AF2AF1151607C8E8004D5145 /* Member.m */,
+				AF2AF1171607CA6A004D5145 /* Evolution.h */,
+				AF2AF1181607CA6A004D5145 /* Evolution.m */,
+				AF2AF11A1607CBBE004D5145 /* EvolutionCell.h */,
+				AF2AF11B1607CBBE004D5145 /* EvolutionCell.m */,
+				AF2AF11D16080B69004D5145 /* Thread.h */,
+				AF2AF11E16080B69004D5145 /* Thread.m */,
 			);
 			path = edufii;
 			sourceTree = "<group>";
@@ -101,6 +198,18 @@
 				AFF1535B1606D9A900CA2685 /* edufii-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AFF1536E1606DDDF00CA2685 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AFF153791606DDDF00CA2685 /* libRestKit.a */,
+				AFF1537B1606DDDF00CA2685 /* RestKitTests.octest */,
+				AFF1537D1606DDDF00CA2685 /* RestKit.framework */,
+				AFF1537F1606DDDF00CA2685 /* RestKitFrameworkTests.octest */,
+				AFF153811606DDDF00CA2685 /* RestKitResources.bundle */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -117,6 +226,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				AFF153841606E5AB00CA2685 /* PBXTargetDependency */,
 			);
 			name = edufii;
 			productName = edufii;
@@ -142,12 +252,56 @@
 			mainGroup = AFF1533E1606D9A900CA2685;
 			productRefGroup = AFF1534A1606D9A900CA2685 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = AFF1536E1606DDDF00CA2685 /* Products */;
+					ProjectRef = AFF1536D1606DDDF00CA2685 /* RestKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				AFF153481606D9A900CA2685 /* edufii */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		AFF153791606DDDF00CA2685 /* libRestKit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRestKit.a;
+			remoteRef = AFF153781606DDDF00CA2685 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AFF1537B1606DDDF00CA2685 /* RestKitTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RestKitTests.octest;
+			remoteRef = AFF1537A1606DDDF00CA2685 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AFF1537D1606DDDF00CA2685 /* RestKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RestKit.framework;
+			remoteRef = AFF1537C1606DDDF00CA2685 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AFF1537F1606DDDF00CA2685 /* RestKitFrameworkTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RestKitFrameworkTests.octest;
+			remoteRef = AFF1537E1606DDDF00CA2685 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AFF153811606DDDF00CA2685 /* RestKitResources.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RestKitResources.bundle;
+			remoteRef = AFF153801606DDDF00CA2685 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		AFF153471606D9A900CA2685 /* Resources */ = {
@@ -169,11 +323,23 @@
 				AFF1535A1606D9A900CA2685 /* main.m in Sources */,
 				AFF1535E1606D9A900CA2685 /* AppDelegate.m in Sources */,
 				AFF153641606D9A900CA2685 /* MasterViewController.m in Sources */,
-				AFF153671606D9A900CA2685 /* DetailViewController.m in Sources */,
+				AF2AF1161607C8E8004D5145 /* Member.m in Sources */,
+				AF2AF1191607CA6A004D5145 /* Evolution.m in Sources */,
+				AF2AF11C1607CBBE004D5145 /* EvolutionCell.m in Sources */,
+				AF2AF11F16080B69004D5145 /* Thread.m in Sources */,
+				AF2AF12216081173004D5145 /* ThreadTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AFF153841606E5AB00CA2685 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RestKit;
+			targetProxy = AFF153831606E5AB00CA2685 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		AFF153561606D9A900CA2685 /* InfoPlist.strings */ = {
@@ -249,7 +415,9 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "edufii/edufii-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(BUILT_PRODUCTS_DIR)/../../Headers\"/**";
 				INFOPLIST_FILE = "edufii/edufii-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -260,7 +428,9 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "edufii/edufii-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(BUILT_PRODUCTS_DIR)/../../Headers\"/**";
 				INFOPLIST_FILE = "edufii/edufii-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -285,6 +455,7 @@
 				AFF1536C1606D9A900CA2685 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

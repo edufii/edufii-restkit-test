@@ -10,4 +10,8 @@
 
 @implementation Evolution
 
+@synthesize name;
+@synthesize followers;
+@synthesize threads;
+
 @end

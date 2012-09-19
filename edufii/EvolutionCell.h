@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface EvolutionCell : UITableViewCell
-
+@property (strong, nonatomic) IBOutlet UILabel *nameLabel;
+@property (strong, nonatomic) IBOutlet UILabel *followersLabel;
 @end

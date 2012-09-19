@@ -9,5 +9,9 @@
 #import <Foundation/Foundation.h>
 
 @interface Member : NSObject
+@property (strong,nonatomic) NSString *uri;
+@property (strong,nonatomic) NSString *name;
+@property (strong,nonatomic) NSString *email;
+@property (strong,nonatomic) NSMutableArray * evolutions;
 
 @end

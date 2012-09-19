@@ -10,4 +10,6 @@
 
 @implementation Thread
 
+@synthesize name;
+
 @end

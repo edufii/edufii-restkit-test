@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MasterViewController : UITableViewController
+@interface MasterViewController : UITableViewController <RKObjectLoaderDelegate>
+@property (strong, nonatomic) UIWindow *window;
 
 @end
